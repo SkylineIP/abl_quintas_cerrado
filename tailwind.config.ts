@@ -23,7 +23,12 @@ export default {
         "24": "repeat(24, minmax(0, 1fr))",
       },
       fontFamily: {
-        bricolage: ["bricolage"],
+        azolight: ["azo-light"],
+        azobold: ["azo-bold"],
+      },
+      backgroundImage: {
+        sidebar: "url('/side/bg.jpg')",
+        impbg: "url('/implantacao/bg.png')",
       },
       screens: {
         desktopmini: { min: "901px", max: "1535px" }, // telas de 901px até 1535px

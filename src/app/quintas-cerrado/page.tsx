@@ -21,7 +21,7 @@ const MenuPage: React.FC = () => {
   };
 
   useEffect(() => {
-    if (setSubmenuAndSelected) setSubmenuAndSelected("/project-name", "");
+    if (setSubmenuAndSelected) setSubmenuAndSelected("/quintas-cerrado", "");
   }, []);
 
   return (

@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import LoadingOverlay from "./components/Loading";
 import { useContextDefault } from "@/context/Context";
 import TelaCheia from "./components/TelaCheia";
-import Music from "./project-name/components/Music";
+import Music from "./quintas-cerrado/components/Music";
 import ButtonSoundAudio from "./components/ButtonSoundAudio";
 
 //configurar tema
@@ -29,7 +29,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "bricolage",
+    fontFamily: "azolight",
   },
 });
 const OrientationWarning = () => (

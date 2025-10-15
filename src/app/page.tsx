@@ -11,8 +11,8 @@ const Home: React.FC = () => {
   const setSubmenuAndSelected = context?.setSubmenuAndSelected;
 
   const handleClick = () => {
-    setSubmenuAndSelected?.("/project-name", ""); // Set state before navigation
-    router.push("/project-name"); // Redireciona para a página de localização
+    setSubmenuAndSelected?.("/quintas-cerrado", ""); // Set state before navigation
+    router.push("/quintas-cerrado"); // Redireciona para a página de localização
   };
 
   return (

@@ -32,8 +32,8 @@ export const ContextDefault = ({ children }: { children: ReactNode }) => {
     item.caminho.includes(currenthPath),
   );
 
-  // If we're on /project-name (home page), set empty submenu
-  if (currenthPath === "/project-name") {
+  // If we're on /quintas-cerrado (home page), set empty submenu
+  if (currenthPath === "/quintas-cerrado") {
     arrayOfSubmenuFirstElement = "";
   } else if (menuIndex !== -1) {
     arrayOfSubmenuFirstElement =

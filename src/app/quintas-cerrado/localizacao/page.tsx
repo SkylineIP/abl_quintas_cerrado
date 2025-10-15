@@ -5,6 +5,7 @@ import Menu from "../components/Menu";
 import Submenu from "../components/Submenu";
 import { useContextDefault } from "@/context/Context";
 import GoogleMap from "../../components/GoogleMaps";
+import Image from "next/image";
 
 const LocalizacaoPage: React.FC = () => {
   const context = useContextDefault();
@@ -13,9 +14,9 @@ const LocalizacaoPage: React.FC = () => {
   return (
     <div className="w-full h-screen bg-background grid grid-cols-24 min-h-[800px] min-w-[1200px] grid-rows-24">
       <Menu />
-      <div className="col-span-19 row-span-22 grid grid-rows-24 grid-cols-19 overflow-hidden animate-fade animate-duration-[2000ms]">
-        <div className="row-span-24 col-span-1" />
-        <div className="row-span-3 col-span-17" />
+      <div className="col-span-18 row-span-21 grid grid-rows-24 grid-cols-19 overflow-hidden animate-fade animate-duration-[2000ms]">
+        {/* <div className="row-span-24 col-span-1" />
+        <div className="row-span-3 col-span-17" /> */}
         {submenu === "ultratour" && (
           <div
             className="row-span-17 col-span-17 relative w-full h-full
@@ -29,8 +30,18 @@ const LocalizacaoPage: React.FC = () => {
           </div>
         )}
         {submenu === "mapa-2d" && (
-          <div className="row-span-17 col-span-17 overflow-hidden">
+          <div className="row-span-24 col-span-19 overflow-hidden">
             <GoogleMap />
+          </div>
+        )}
+        {submenu === "proximidades" && (
+          <div className="relative row-span-24 col-span-20">
+            <Image
+              src="/localizacao/proximidades.png"
+              alt="Proximidades"
+              fill
+              className=""
+            />
           </div>
         )}
       </div>
