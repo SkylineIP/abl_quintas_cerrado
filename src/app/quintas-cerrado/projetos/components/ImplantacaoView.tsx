@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-import BgSvg from '../BgSvg'
-import LupaSvg from '../LupaSvg'
+import BgSvg from '../svgs/BgSvg'
+import LupaSvg from '../svgs/LupaSvg'
 
 
 const ImplantacaoView = () => {

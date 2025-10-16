@@ -100,7 +100,7 @@ const ButtonsVilaSvg = ({ onClickButton }: ButtonsPracaSvgProps) => {
                 </g>
                 <g
                     onClick={() => {
-                        onClickButton(0)
+                        onClickButton(10)
                     }}
                     className='cursor-pointer'
                     id="10">

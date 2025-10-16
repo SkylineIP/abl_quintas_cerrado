@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
-import ButtonsPracaSvg from '../ButtonsPracaSvg'
+import ButtonsPracaSvg from '../svgs/ButtonsPracaSvg'
 
 const PracaView = () => {
     const [showImage, setShowImage] = useState<boolean>(false);

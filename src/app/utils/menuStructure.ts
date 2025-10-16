@@ -7,9 +7,9 @@ const menuStructure = [
   },
   {
     title: "Projeto",
-    submenu: ["IMPLANTAÇÃO", "PRAÇA PEDRO URIAS", "VILA CASARÃO", "PRAÇA DO FOGARÉU"],
+    submenu: ["IMPLANTAÇÃO", "PRAÇA PEDRO URIAS", "VILA CASARÃO", "PRAÇA DO FORAGÉU"],
     caminho: "/quintas-cerrado/projetos",
-    submenuElements: ["implantacao", "praca", "vila", "fogareu"],
+    submenuElements: ["implantacao", "praca", "vila", "forageu"],
   },
   {
     title: "Imagens",
@@ -19,15 +19,15 @@ const menuStructure = [
   },
   {
     title: "Fotos Reais",
-    submenu: ["IMPLANTAÇÃO", "COMPARE"],
+    submenu: [""],
     caminho: "/quintas-cerrado/fotos-reais",
-    submenuElements: ["implantacao", "compare"],
+    submenuElements: [""],
   },
   {
     title: "Projeto Casas",
-    submenu: [""],
+    submenu: ["CASA CEDRO", "CASA JABUTICABEIRA", "CASA ANGICO", "CASA JATOBÁ", "CASA AROEIRA", "CASA BARU", "CASA ANGELIN", "CASA IPÊ"],
     caminho: "/quintas-cerrado/projeto-casas",
-    submenuElements: [""],
+    submenuElements: ["cedro", "jabuticabeira", "angico", "jatoba", "aroweria", "baru", "angelin", "ipe"],
   },
   {
     title: "Diferenciais",

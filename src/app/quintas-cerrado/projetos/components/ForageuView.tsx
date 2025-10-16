@@ -1,68 +1,28 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
-import ButtonsVilaSvg from '../svgs/ButtonsVilaSvg';
+import ButtonsForageu from '../svgs/ButtonsForageu';
 
-const VilaView = () => {
+const ForageuView = () => {
     const [showImage, setShowImage] = useState<boolean>(false);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const pracaImages = [
         {
             id: 1,
-            src: "/vila/1.png",
-            alt: "Casarão"
-        },
-        {
-            id: 2,
-            src: "/vila/2.png",
-            alt: "Salão de Eventos"
-        },
-        {
-            id: 3,
-            src: "/vila/3.png",
-            alt: "Piscinas"
-        },
-        {
-            id: 5,
-            src: "/vila/5.png",
-            alt: "Lago do Engenho"
+            src: "/forageu/1.png",
+            alt: "Heliponto"
         },
         {
             id: 6,
-            src: "/vila/6.png",
-            alt: "Fazendinha / Mini-haras"
+            src: "/forageu/6.png",
+            alt: "Bicicross"
         },
         {
-            id: 8,
-            src: "/vila/8.png",
-            alt: "Capela Ecumênica"
+            id: 7,
+            src: "/forageu/7.png",
+            alt: "Wine Garden"
         },
-        {
-            id: 10,
-            src: "/vila/10.png",
-            alt: "Lago Rosário"
-        },
-        {
-            id: 11,
-            src: "/vila/11.png",
-            alt: "Decks de pesca"
-        },
-        {
-            id: 12,
-            src: "/vila/12.png",
-            alt: "Play Talude"
-        },
-        {
-            id: 15,
-            src: "/vila/15.png",
-            alt: "Playground"
-        },
-        {
-            id: 17,
-            src: "/vila/17.png",
-            alt: "Fire Place"
-        },
-        
     ]
+
     const handleClickButton = (id: number) => {
         console.log(`Button ${id} clicked`);
         const image = pracaImages.find(img => img.id === id);
@@ -83,12 +43,12 @@ const VilaView = () => {
         <>
             <div className='col-span-19 row-span-24 relative'>
                 <Image
-                    src="/vila/bg.png"
+                    src="/forageu/bg.png"
                     alt="Background"
                     fill
                     className="animate-fade"
                 />
-                <ButtonsVilaSvg
+                <ButtonsForageu
                     onClickButton={handleClickButton}
                 />
                 {showImage && selectedImage && (
@@ -122,4 +82,4 @@ const VilaView = () => {
     )
 }
 
-export default VilaView
+export default ForageuView

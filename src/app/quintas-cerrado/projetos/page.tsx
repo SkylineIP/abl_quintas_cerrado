@@ -7,6 +7,8 @@ import { useContextDefault } from "@/context/Context";
 import ImplantacaoView from "./components/ImplantacaoView";
 import PracaView from "./components/PracaView";
 import VilaView from "./components/VilaView";
+import ForageuView from "./components/ForageuView";
+import InstrucaoPopup from "./components/InstrucaoPopup";
 
 const ProjetoPage: React.FC = () => {
     const context = useContextDefault();
@@ -15,6 +17,7 @@ const ProjetoPage: React.FC = () => {
         <div className="w-full h-screen bg-background grid grid-cols-24 min-h-[800px] min-w-[1200px] grid-rows-24">
             <Menu />
             <div className="col-span-18 row-span-21 grid grid-rows-24 grid-cols-19 overflow-hidden animate-fade animate-duration-[2000ms] bg-impbg bg-cover">
+                <InstrucaoPopup/>
                 {submenu === "implantacao" && (
                     <ImplantacaoView />
                 )}
@@ -24,8 +27,8 @@ const ProjetoPage: React.FC = () => {
                 {submenu === "vila" && (
                     <VilaView />
                 )}
-                {submenu === "fogareu" && (
-                    <PracaView />
+                {submenu === "forageu" && (
+                    <ForageuView />
                 )}
             </div>
             <Submenu />

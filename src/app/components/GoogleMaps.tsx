@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
+import Image from "next/image";
 import { useContextDefault } from "@/context/Context";
 
 const GoogleMap = () => {
@@ -30,22 +31,33 @@ const GoogleMap = () => {
           // você pode substituir por outras coordenadas
           defaultZoom={18}
           // nível de zoom inicial do mapa
-          disableDefaultUI={false}
+          disableDefaultUI={true}
           // desativa a interface padrão do Google Maps
           gestureHandling={"greedy"}
           // controla o comportamento de gestos do mapa
           mapTypeId={isSatellite ? "satellite" : "roadmap"}
-          // controla se o mapa é satélite ou 2D
+        // controla se o mapa é satélite ou 2D
         >
           <Marker
             // marcador no mapa
             icon={{
-              url: "/local/pin.svg", // caminho do ícone
+              url: "/localizacao/Pin.svg", // caminho do ícone
             }}
             position={{ lat: -22.739496629856745, lng: -41.944472392281355 }}
           />
         </Map>
       </APIProvider>
+      <button
+        className="absolute bottom-10 right-10 cursor-pointer"
+        onClick={() => setIsSatellite(!isSatellite)}
+      >
+        <Image
+          src={isSatellite ? "/localizacao/mapa2d.svg" : "/localizacao/mapasatelite.svg"}
+          width={200}
+          height={200}
+          alt="mudar mapa entre 2d e satélite"
+        />
+      </button>
     </div>
   );
 };

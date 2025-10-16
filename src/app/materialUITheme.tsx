@@ -65,8 +65,8 @@ export default function ThemeRegistry({
       {loading && <LoadingOverlay />}
       {isLandscape ? children : <OrientationWarning />}
       {abrirImagensTelaCheia?.open && <TelaCheia />}
-      <ButtonSoundAudio />
-      <Music />
+      {/* <ButtonSoundAudio />
+      <Music /> */}
     </ThemeProvider>
   );
 }
