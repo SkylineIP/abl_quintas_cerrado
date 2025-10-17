@@ -2,7 +2,6 @@
 import React from "react";
 
 import { useRouter } from "next/navigation";
-import menuStructure from "../utils/menuStructure";
 import Image from "next/image";
 
 const MenuPage: React.FC = () => {
