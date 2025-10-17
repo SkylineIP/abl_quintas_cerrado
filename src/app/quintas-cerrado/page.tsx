@@ -12,24 +12,17 @@ const MenuPage: React.FC = () => {
 
 
   return (
-    <div className="w-full h-full bg-background-tela-inicial overflow-hidden relative min-h-[800px] min-w-[1200px] flex justify-center items-center">
+    <div className="w-full h-full bg-impbg relative min-h-[800px] min-w-[1200px] flex justify-between items-end">
       <Image
+        onClick={() => {
+          router.push("/quintas-cerrado/localizacao")
+          setSubmenuAndSelected?.("Localização", "tour360")
+        }}
         src="/descanso/bg.png"
         alt="Background"
         fill
-        className=" object-fill"
+        className=" object-contain"
       />
-      <button
-      onClick={() => {
-        router.push("/quintas-cerrado/localizacao")
-        setSubmenuAndSelected?.("Localização", "tour360")
-      }}
-        className="w-full h-[9%] bg-[#FAEDD4] text-[#16555A] text-2xl text-center absolute bottom-0"
-        >
-          <span className=" uppercase">
-            <strong>TOQUE</strong> para iniciar !
-          </span>
-        </button>
     </div>
   );
 };
