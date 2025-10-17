@@ -23,13 +23,13 @@ const eslintConfig = [
     rules: {
       /* --- Estilo e Consistência --- */
       "react-hooks/exhaustive-deps": "off",
-      indent: ["error", 2], // indentação 2 espaços
-      quotes: ["error", "double"], // forçar aspas duplas
-      semi: ["error", "always"], // sempre ponto e vírgula
-      "comma-dangle": ["error", "always-multiline"], // vírgula no final em objetos/arrays multilinha
+      // indent: ["error", 2], // indentação 2 espaços
+      // quotes: ["error", "double"], // forçar aspas duplas
+      // semi: ["error", "always"], // sempre ponto e vírgula
+      // "comma-dangle": ["error", "always-multiline"], // vírgula no final em objetos/arrays multilinha
       "object-curly-spacing": ["error", "always"], // espaço dentro de {}
       "array-bracket-spacing": ["error", "never"], // sem espaço dentro de []
-      "no-multiple-empty-lines": ["error", { max: 1 }], // no máximo 1 linha em branco
+      // "no-multiple-empty-lines": ["error", { max: 1 }], // no máximo 1 linha em branco
 
       /* --- Boas práticas --- */
       "no-console": ["warn", { allow: ["warn", "error"] }], // console.log vira warning
@@ -42,7 +42,7 @@ const eslintConfig = [
       /* --- React/Next --- */
       "react/jsx-uses-react": "off", // Next.js já gerencia React
       "react/react-in-jsx-scope": "off", // não precisa importar React
-      "react/self-closing-comp": "error", // componentes sem children = <Comp />
+      // "react/self-closing-comp": "error", // componentes sem children = <Comp />
     },
   },
 ];

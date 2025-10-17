@@ -7,8 +7,8 @@ import { usePathname } from "next/navigation";
 import LoadingOverlay from "./components/Loading";
 import { useContextDefault } from "@/context/Context";
 import TelaCheia from "./components/TelaCheia";
-import Music from "./quintas-cerrado/components/Music";
-import ButtonSoundAudio from "./components/ButtonSoundAudio";
+// import Music from "./quintas-cerrado/components/Music";
+// import ButtonSoundAudio from "./components/ButtonSoundAudio";
 
 //configurar tema
 //cores e fontes

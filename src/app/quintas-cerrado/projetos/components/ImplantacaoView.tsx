@@ -46,8 +46,6 @@ const ImplantacaoView = () => {
     const handleCircleClick = (id: number, x: number, y: number) => {
         setSelectedCircle({ id, x, y });
         setSelectedTextImage(id);
-        console.log(`Circle ${id} clicked at (${x}, ${y})`);
-        console.log("Images to display:", textImagesToDisplay.find(t => t.id === id)?.images);
     };
 
     const selectedData = selectedTextImage

@@ -64,7 +64,6 @@ const VilaView = () => {
         
     ]
     const handleClickButton = (id: number) => {
-        console.log(`Button ${id} clicked`);
         const image = pracaImages.find(img => img.id === id);
         if (image) {
             setSelectedImage(image.src);
