@@ -54,7 +54,9 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({
 
     const handleButtonClick = (key: string) => {
         setButtonPressed((prev) => (prev === key ? "" : key))
-        onClick && onClick(key)
+        if (onClick) {
+            onClick(key)
+        }
     }
 
     // Filter buttons based on props passed
