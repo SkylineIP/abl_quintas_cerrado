@@ -17,9 +17,9 @@ const LocalizacaoPage: React.FC = () => {
       <div className="col-span-18 row-span-21 grid grid-rows-24 grid-cols-19 overflow-hidden animate-fade animate-duration-[2000ms]">
         {/* <div className="row-span-24 col-span-1" />
         <div className="row-span-3 col-span-17" /> */}
-        {submenu === "ultratour" && (
+        {submenu === "tour360" && (
           <div
-            className="row-span-17 col-span-17 relative w-full h-full
+            className="row-span-24 col-span-19 relative w-full h-full
           animate-fade animate-duration-[1000ms]"
           >
             <iframe
