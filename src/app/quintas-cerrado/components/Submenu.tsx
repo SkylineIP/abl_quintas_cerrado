@@ -58,7 +58,7 @@ const Submenu: React.FC = memo(function Submenu() {
               `}
             ></div>
             <span
-              className={`w-full text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[12px] desktop:text-sm tracking-widest leading-2.5 text-first uppercase ${submenu === menuStructure[indexSelected].submenuElements[index]
+              className={`w-full text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[12px] desktop:text-sm fourk:text-3xl tracking-widest leading-2.5 text-first uppercase ${submenu === menuStructure[indexSelected].submenuElements[index]
                 ? "font-azobold font-extrabold"
                 : ""
                 }`}
