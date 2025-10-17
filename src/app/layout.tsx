@@ -6,9 +6,9 @@ import ThemeRegistry from "./materialUITheme";
 import { ContextSound } from "@/context/ContextSound";
 
 export const metadata: Metadata = {
-  title: "Skyline",
+  title: "ABL Quintas do Cerrado",
   description:
-    "Modelo de Replicação apoiado na Documentação feita para o setor",
+    "ABL Quintas do Cerrado",
 };
 
 export default function RootLayout({
