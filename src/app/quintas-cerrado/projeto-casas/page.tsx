@@ -6,6 +6,8 @@ import MenuOverlay from './components/MenuOverlay'
 import Videos from '@/app/components/Video'
 import { useContextDefault } from '@/context/Context';
 import CasaCedroGrid from './components/CasaCedroGrid'
+import CasaCedroGridInternas from './components/CasaCedroGridInternas'
+import PlantasView from './components/PlantasView'
 
 const ProjetoCasasPage = () => {
     const context = useContextDefault()
@@ -26,6 +28,12 @@ const ProjetoCasasPage = () => {
                     )}
                     {submenu === "cedro" && currentView === "externas" && (
                         <CasaCedroGrid/>
+                    )}
+                    {submenu === "cedro" && currentView === "imagens" && (
+                        <CasaCedroGridInternas/>
+                    )}
+                    {submenu === "cedro" && currentView === "plantas" && (
+                        <PlantasView/>
                     )}
                 </div>
                 <MenuOverlay
