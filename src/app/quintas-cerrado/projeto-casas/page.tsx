@@ -73,7 +73,7 @@ const ProjetoCasasPage = () => {
                     )}
                     {submenu === "angico" && currentView === "videos" && (
                         <Videos
-                            thumb="/proj-casas/thumbjabu.png"
+                            thumb=""
                             videoSrc="/proj-casas/videoangico.mp4"
                         />
                     )}
@@ -85,7 +85,7 @@ const ProjetoCasasPage = () => {
                     )}
                     {submenu === "jatoba" && currentView === "videos" && (
                         <Videos
-                            thumb="/proj-casas/thumbjabu.png"
+                            thumb=""
                             videoSrc="/proj-casas/videojatoba.mp4"
                         />
                     )}

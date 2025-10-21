@@ -10,7 +10,7 @@ const Serie: React.FC = () => {
     <div className="w-full h-full bg-background grid grid-cols-24 grid-rows-24 ">
       <Menu />
       <div className="col-span-19  row-span-24 row-start-1 overflow-hidden animate-fade animate-duration-[2000ms] relative">
-        <Videos thumb="/proj-casas/thumbjabu.png" videoSrc="/proj-casas/video.mp4" />
+        <Videos thumb="" videoSrc="/videos/videospage.mp4" />
       </div>
 
       <Submenu />

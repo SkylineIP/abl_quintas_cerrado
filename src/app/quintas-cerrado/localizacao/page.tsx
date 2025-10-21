@@ -23,6 +23,7 @@ const LocalizacaoPage: React.FC = () => {
           animate-fade animate-duration-[1000ms]"
           >
             <iframe
+              allowFullScreen
               src="https://tour.ultratour.com.br/ABL+Prime/quintas+do+cerrado/index.html?media-index=4"
               className="w-full h-full"
               title="ultratour"

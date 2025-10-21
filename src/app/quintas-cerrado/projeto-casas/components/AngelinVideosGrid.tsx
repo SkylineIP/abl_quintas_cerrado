@@ -23,8 +23,8 @@ type ExpandedVideo = {
 
 
 const expandedVideos: ExpandedVideo[] = [
-    { src: "/proj-casas/videojatoba.mp4", alt: "Opcao 01", thumb: "/proj-casas/thumbjabu.png" },
-    { src: "/proj-casas/video.mp4", alt: "Opcao 01", thumb: "/proj-casas/thumbjabu.png" },
+    { src: "/proj-casas/angelin/videos/opcao-1-1.mp4", alt: "Opcao 01", thumb: "" },
+    { src: "/proj-casas/angelin/videos/opcao-1-2.mp4", alt: "Opcao 01", thumb: "" },
 ]
 
 const AngelinVideosGrid: React.FC = () => {

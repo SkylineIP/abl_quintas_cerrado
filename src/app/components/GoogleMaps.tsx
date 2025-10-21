@@ -22,11 +22,12 @@ const GoogleMap = () => {
   }, [submenu]);
 
   return (
+    //-16.67677463238947, -49.6206706
     <div className="relative w-full h-full">
       <APIProvider apiKey={API_KEY}>
         <Map
           style={{ width: "100%", height: "100vh" }}
-          defaultCenter={{ lat: -22.739496629856745, lng: -41.944472392281355 }}
+          defaultCenter={{ lat: -16.67677463238947, lng: -49.6206706 }}
           // coordenadas do centro do mapa
           // você pode substituir por outras coordenadas
           defaultZoom={18}
@@ -43,7 +44,7 @@ const GoogleMap = () => {
             icon={{
               url: "/localizacao/Pin.svg", // caminho do ícone
             }}
-            position={{ lat: -22.739496629856745, lng: -41.944472392281355 }}
+            position={{ lat: -16.67677463238947, lng: -49.6206706 }}
           />
         </Map>
       </APIProvider>

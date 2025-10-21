@@ -28,11 +28,11 @@ type ExpandedVideo = {
 
 
 const expandedVideos: ExpandedVideo[] = [
-    { src: "/proj-casas/videojatoba.mp4", alt: "Opcao 01", thumb: "/proj-casas/thumbjabu.png" },
-    { src: "/proj-casas/video.mp4", alt: "Opcao 01", thumb: "/proj-casas/thumbjabu.png" },
-    { src: "/proj-casas/videoangico.mp4", alt: "Opcao 01", thumb: "/proj-casas/thumbjabu.png" },
-    { src: "/proj-casas/videojabuticabeira.mp4", alt: "Opcap 02", thumb: "/proj-casas/thumbjabu.png" },
-    // { src: "/proj-casas/jatoba/expanded/5.png", alt: "Opcao 02", thumb: "/proj-casas/thumbjabu.png" },
+    { src: "/proj-casas/aroeira/videos/opcao-1-1.mp4", alt: "Opção 01", thumb: "" },
+    { src: "/proj-casas/aroeira/videos/opcao-1-2.mp4", alt: "Opção 01", thumb: "" },
+    { src: "/proj-casas/aroeira/videos/opcao-1-3.mp4", alt: "Opção 01", thumb: "" },
+    { src: "/proj-casas/aroeira/videos/opcao-2-1.mp4", alt: "Opção 02", thumb: "" },
+    { src: "/proj-casas/aroeira/videos/opcao-2-2.mp4", alt: "Opção 02", thumb: "" },
 ]
 
 const AroeiraVideosGrid: React.FC = () => {
