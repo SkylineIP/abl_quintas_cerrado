@@ -28,7 +28,7 @@ type ExpandedVideo = {
 
 
 const expandedVideos: ExpandedVideo[] = [
-    { src: "/proj-casas/videojatoba.mp4", alt: "Opcao 01", thumb: "/proj-casas/thumbjabu.png"},
+    { src: "/proj-casas/videojatoba.mp4", alt: "Opcao 01", thumb: "/proj-casas/thumbjabu.png" },
     { src: "/proj-casas/video.mp4", alt: "Opcao 01", thumb: "/proj-casas/thumbjabu.png" },
     { src: "/proj-casas/videoangico.mp4", alt: "Opcao 01", thumb: "/proj-casas/thumbjabu.png" },
     { src: "/proj-casas/videojabuticabeira.mp4", alt: "Opcap 02", thumb: "/proj-casas/thumbjabu.png" },
