@@ -62,7 +62,7 @@ const Menu: React.FC = memo(function Menu() {
                 }`}
             >
               <span className="w-5 h-5 rounded-full bg-[#FAEDD4] mr-8 inline-block"></span>
-              <p className="text-2xl fourk:text-5xl text-left">{item.title}</p>
+              <p className="text-2xl fourk:text-3xl text-left">{item.title}</p>
             </button>
           ))}
         </div>

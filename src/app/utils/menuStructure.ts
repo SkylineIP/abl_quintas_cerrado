@@ -25,15 +25,15 @@ const menuStructure = [
   },
   {
     title: "Projeto Casas",
-    submenu: ["CASA CEDRO", "CASA JABUTICABEIRA", "CASA ANGICO", "CASA JATOBÁ", "CASA AROEIRA", "CASA BARU", "CASA ANGELIN", "CASA IPÊ"],
+    submenu: ["CASA CEDRO", "CASA JABOTICABEIRA", "CASA ANGICO", "CASA JATOBÁ", "CASA AROEIRA", "CASA BARU", "CASA ANGELIN", "CASA IPÊ"],
     caminho: "/quintas-cerrado/projeto-casas",
-    submenuElements: ["cedro", "jabuticabeira", "angico", "jatoba", "aroweria", "baru", "angelin", "ipe"],
+    submenuElements: ["cedro", "jabuticabeira", "angico", "jatoba", "aroeira", "baru", "angelin", "ipe"],
   },
   {
     title: "Diferenciais",
-    submenu: [""],
+    submenu: ["SUSTENTABILIDADE", "INFRAESTRUTURA", "SEGURANÇA"],
     caminho: "/quintas-cerrado/diferenciais",
-    submenuElements: [""],
+    submenuElements: ["sustentabilidade", "infraestrutura", "seguranca"],
   },
   {
     title: "Vídeos",
@@ -43,9 +43,9 @@ const menuStructure = [
   },
   {
     title: "Institucional",
-    submenu: [""],
+    submenu: ["ABL PRIME", "CONSCIENTE"],
     caminho: "/quintas-cerrado/institucional",
-    submenuElements: [""],
+    submenuElements: ["abl", "consciente"],
   },
 ];
 

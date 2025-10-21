@@ -1,6 +1,6 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import Image from "next/image"
-
+import { useContextDefault } from "@/context/Context"
 type OverlayButton = {
     key: "videos" | "externas" | "imagens" | "plantas"
     pressed: string
@@ -36,21 +36,18 @@ const buttons: OverlayButton[] = [
 ]
 
 type MenuOverlayProps = {
-    videos?: boolean
-    externas?: boolean
-    imagens?: boolean
-    plantas?: boolean
     onClick?: (key: string) => void
 }
 
 const MenuOverlay: React.FC<MenuOverlayProps> = ({
-    videos,
-    externas,
-    imagens,
-    plantas,
     onClick,
 }) => {
-    const [buttonPressed, setButtonPressed] = useState<string>("")
+    const context = useContextDefault()
+    const submenu = context?.submenu
+    const [buttonPressed, setButtonPressed] = useState<string>("videos")
+    useEffect(() => {
+        setButtonPressed("videos")
+    }, [submenu])
 
     const handleButtonClick = (key: string) => {
         setButtonPressed((prev) => (prev === key ? "" : key))
@@ -59,21 +56,20 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({
         }
     }
 
-    // Filter buttons based on props passed
-    const visibleButtons = buttons.filter((button) => {
-        switch (button.key) {
-            case "videos":
-                return videos
-            case "externas":
-                return externas
-            case "imagens":
-                return imagens
-            case "plantas":
-                return plantas
-            default:
-                return false
-        }
-    })
+    const submenuButtons: Record<string, ("videos" | "externas" | "imagens" | "plantas")[]> = {
+        cedro: ["videos", "externas", "imagens", "plantas"],
+        jabuticabeira: ["videos", "externas", "imagens", "plantas"],
+        angico: ["videos", "externas", "plantas"],
+        jatoba: ["videos", "externas", "plantas"],
+        aroeira: ["videos", "externas", "plantas"],
+        baru: ["videos", "externas", "plantas"],
+        angelin: ["videos", "externas"],
+        ipe: ["videos", "externas", "plantas"],
+    }
+
+    const visibleKeys = submenu ? submenuButtons[submenu] || [] : []
+
+    const visibleButtons = buttons.filter((b) => visibleKeys.includes(b.key))
 
     return (
         <div
