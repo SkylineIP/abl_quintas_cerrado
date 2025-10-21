@@ -125,7 +125,7 @@ const Videos: React.FC<VideosProps> = ({ thumb, videoSrc }) => {
     <div
       className={`${
         isFullscreen && !showControls ? "cursor-none" : "cursor-auto"
-      } w-full h-full rounded-2xl border-2 border-personalizeorange overflow-hidden relative`}
+      } w-full h-full  overflow-hidden relative`}
       ref={containerRef}
       onMouseMove={handleMouseMove}
     >
@@ -144,7 +144,7 @@ const Videos: React.FC<VideosProps> = ({ thumb, videoSrc }) => {
       {/* Overlay dos controles */}
       {showControls && (
         <div
-          className="absolute bottom-2 left-2 right-2 flex flex-col items-center justify-between bg-[#2824B4]/80 p-2 mx-12 rounded-lg z-50 "
+          className="absolute bottom-2 left-2 right-2 flex flex-col items-center justify-between bg-[#16555A]/80 p-2 mx-12 rounded-lg z-50 "
           onMouseLeave={() => setShowVolumeSlider(false)}
         >
           {/* Slider de progresso */}
@@ -154,7 +154,7 @@ const Videos: React.FC<VideosProps> = ({ thumb, videoSrc }) => {
               min={0}
               max={duration}
               step={1}
-              style={{ color: "#80FFF8" }}
+              style={{ color: "#FAEDD4" }}
               onChange={(_, value) => {
                 const newTime = typeof value === "number" ? value : value[0];
                 setCurrentTime(newTime);
@@ -193,7 +193,7 @@ const Videos: React.FC<VideosProps> = ({ thumb, videoSrc }) => {
               {showVolumeSlider && (
                 <Box sx={{ width: 100, zIndex: 100 }}>
                   <Slider
-                    style={{ color: "#80FFF8" }}
+                    style={{ color: "#FAEDD4" }}
                     orientation="horizontal"
                     value={volume}
                     min={0}

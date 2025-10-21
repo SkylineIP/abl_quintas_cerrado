@@ -17,14 +17,14 @@ const LocalizacaoPage: React.FC = () => {
       <div className="col-span-18 row-span-21 grid grid-rows-24 grid-cols-19 overflow-hidden animate-fade animate-duration-[2000ms]">
         {/* <div className="row-span-24 col-span-1" />
         <div className="row-span-3 col-span-17" /> */}
-        {submenu === "tour360a" && (
+        {submenu === "tour360" && (
           <div
             className="row-span-24 col-span-19 relative w-full h-full
           animate-fade animate-duration-[1000ms]"
           >
             <iframe
-              src="https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/GPL/GPL+-+Hello/index.htm"
-              className="w-full h-full rounded-lg"
+              src="https://tour.ultratour.com.br/ABL+Prime/quintas+do+cerrado/index.html?media-index=4"
+              className="w-full h-full"
               title="ultratour"
             />
           </div>

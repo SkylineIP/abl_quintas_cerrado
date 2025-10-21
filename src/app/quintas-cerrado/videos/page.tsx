@@ -9,8 +9,8 @@ const Serie: React.FC = () => {
   return (
     <div className="w-full h-full bg-background grid grid-cols-24 grid-rows-24 ">
       <Menu />
-      <div className="col-span-19  row-span-20 row-start-2 overflow-hidden animate-fade animate-duration-[2000ms] relative">
-        <Videos thumb="" videoSrc="" />
+      <div className="col-span-19  row-span-24 row-start-1 overflow-hidden animate-fade animate-duration-[2000ms] relative">
+        <Videos thumb="/proj-casas/thumbjabu.png" videoSrc="/proj-casas/video.mp4" />
       </div>
 
       <Submenu />
