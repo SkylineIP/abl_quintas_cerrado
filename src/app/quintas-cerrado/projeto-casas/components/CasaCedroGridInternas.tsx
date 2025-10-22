@@ -52,9 +52,9 @@ const expandedImages: ExpandedImage[] = [
     { src: "/proj-casas/cedro/interna/expanded/10.jpg", alt: "Suíte" },
     { src: "/proj-casas/cedro/interna/expanded/11.jpg", alt: "Banho" },
     { src: "/proj-casas/cedro/interna/expanded/12.jpg", alt: "Banho" },
+    { src: "/proj-casas/cedro/interna/expanded/13.jpg", alt: "Suíte" },
     { src: "/proj-casas/cedro/interna/expanded/14.jpg", alt: "Suíte" },
     { src: "/proj-casas/cedro/interna/expanded/15.jpg", alt: "Suíte" },
-    { src: "/proj-casas/cedro/interna/expanded/13.jpg", alt: "Suíte" },
 ]
 
 const CasaCedroGridInternas: React.FC = () => {

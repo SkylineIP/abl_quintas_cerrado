@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { forwardRef, useImperativeHandle, useRef, useState } from "react";
 import { IconButton } from "@mui/material";
 import {
   PlayArrow,
@@ -18,9 +18,15 @@ import Slider from "@mui/material/Slider";
 interface VideosProps {
   thumb: string;
   videoSrc: string;
+  noControls?: boolean;
 }
+export type VideoControls = {
+  play: () => void;
+  pause: () => void;
+  rewind: () => void;
+};
 
-const Videos: React.FC<VideosProps> = ({ thumb, videoSrc }) => {
+const Videos = forwardRef<VideoControls, VideosProps>(({ thumb, videoSrc, noControls }, ref) => {
   // Referência para o elemento de vídeo
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
@@ -121,6 +127,24 @@ const Videos: React.FC<VideosProps> = ({ thumb, videoSrc }) => {
     }
   };
 
+  useImperativeHandle(ref, () => ({
+    play: () => {
+      if (videoRef.current) {
+        videoRef.current.play();
+        setPlaying(true);
+      }
+    },
+    pause: () => {
+      if (videoRef.current) {
+        videoRef.current.pause();
+        setPlaying(false);
+      }
+    },
+    rewind: () => {
+      if (videoRef.current) videoRef.current.currentTime = 0;
+    },
+  }));
+
   return (
     <div
       className={`${
@@ -142,7 +166,7 @@ const Videos: React.FC<VideosProps> = ({ thumb, videoSrc }) => {
         onLoadedMetadata={() => setDuration(videoRef.current?.duration || 0)}
       />
       {/* Overlay dos controles */}
-      {showControls && (
+      {showControls && !noControls && (
         <div
           className="absolute bottom-2 left-2 right-2 flex flex-col items-center justify-between bg-[#16555A]/80 p-2 mx-12 rounded-lg z-50 "
           onMouseLeave={() => setShowVolumeSlider(false)}
@@ -215,6 +239,8 @@ const Videos: React.FC<VideosProps> = ({ thumb, videoSrc }) => {
       )}
     </div>
   );
-};
+});
+
+Videos.displayName = "Videos";
 
 export default Videos;
