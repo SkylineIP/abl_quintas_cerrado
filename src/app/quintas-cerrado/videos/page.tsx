@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const Serie: React.FC = () => {
   const videoRef = useRef<VideoControls | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [, setIsPlaying] = useState(false);
 
   const navButtons = [
     { name: "rewind", src: "/implantacao/rewind.png" },
