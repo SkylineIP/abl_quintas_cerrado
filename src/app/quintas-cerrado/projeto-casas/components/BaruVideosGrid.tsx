@@ -24,9 +24,9 @@ type ExpandedVideo = {
 
 
 const expandedVideos: ExpandedVideo[] = [
-    { src: "/proj-casas/baru/videos/opcao-1-1.mp4", alt: "Opcao 01", thumb: "" },
-    { src: "/proj-casas/baru/videos/opcao-1-2.mp4", alt: "Opcao 01", thumb: "" },
-    { src: "/proj-casas/baru/videos/opcao-2-1.mp4", alt: "Opcao 02", thumb: "" }
+    { src: "https://skylineip.s3.sa-east-1.amazonaws.com/Programa%C3%A7%C3%A3o/ABL-Quintas/baru-opcao-1-1.mp4", alt: "Opcao 01", thumb: "" },
+    { src: "https://skylineip.s3.sa-east-1.amazonaws.com/Programa%C3%A7%C3%A3o/ABL-Quintas/baru-opcao-1-2.mp4", alt: "Opcao 01", thumb: "" },
+    { src: "https://skylineip.s3.sa-east-1.amazonaws.com/Programa%C3%A7%C3%A3o/ABL-Quintas/baru-opcao-2-1.mp4", alt: "Opcao 02", thumb: "" }
 ]
 
 const BaruVideosGrid: React.FC = () => {

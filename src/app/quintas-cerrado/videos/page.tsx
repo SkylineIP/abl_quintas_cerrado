@@ -33,7 +33,7 @@ const Serie: React.FC = () => {
     <div className="w-full h-full bg-background grid grid-cols-24 grid-rows-24 ">
       <Menu />
       <div className="col-span-19  row-span-21 row-start-1 overflow-hidden animate-fade animate-duration-[2000ms] relative">
-        <Videos ref={videoRef} thumb="" videoSrc="/videos/videospage.mp4" noControls />
+        <Videos ref={videoRef} thumb="" videoSrc="https://skylineip.s3.sa-east-1.amazonaws.com/Programa%C3%A7%C3%A3o/ABL-Quintas/videospage.mp4" noControls />
       </div>
       <div className="col-span-19 row-span-3 row-start-22 bg-[#FAEDD4] flex items-center justify-center">
         <div className=" border-2 border-[#16555A] rounded-full py-1 px-2 flex items-center justify-between gap-10">

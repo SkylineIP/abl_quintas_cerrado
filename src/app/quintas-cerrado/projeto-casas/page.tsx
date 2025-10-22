@@ -44,7 +44,7 @@ const ProjetoCasasPage = () => {
                     {submenu === "cedro" && currentView === "videos" && (
                         <Videos
                             thumb="/proj-casas/thumb.png"
-                            videoSrc="/proj-casas/video.mp4"
+                            videoSrc="https://skylineip.s3.sa-east-1.amazonaws.com/Programa%C3%A7%C3%A3o/ABL-Quintas/video.mp4"
                         />
                     )}
                     {submenu === "cedro" && currentView === "externas" && (
@@ -59,7 +59,7 @@ const ProjetoCasasPage = () => {
                     {submenu === "jabuticabeira" && currentView === "videos" && (
                         <Videos
                             thumb="/proj-casas/thumbjabu.png"
-                            videoSrc="/proj-casas/videojabuticabeira.mp4"
+                            videoSrc="https://skylineip.s3.sa-east-1.amazonaws.com/Programa%C3%A7%C3%A3o/ABL-Quintas/videojabuticabeira.mp4"
                         />
                     )}
                     {submenu === "jabuticabeira" && currentView === "externas" && (
@@ -74,7 +74,7 @@ const ProjetoCasasPage = () => {
                     {submenu === "angico" && currentView === "videos" && (
                         <Videos
                             thumb=""
-                            videoSrc="/proj-casas/videoangico.mp4"
+                            videoSrc="https://skylineip.s3.sa-east-1.amazonaws.com/Programa%C3%A7%C3%A3o/ABL-Quintas/videoangico.mp4"
                         />
                     )}
                     {submenu === "angico" && currentView === "externas" && (
@@ -86,7 +86,7 @@ const ProjetoCasasPage = () => {
                     {submenu === "jatoba" && currentView === "videos" && (
                         <Videos
                             thumb=""
-                            videoSrc="/proj-casas/videojatoba.mp4"
+                            videoSrc="https://skylineip.s3.sa-east-1.amazonaws.com/Programa%C3%A7%C3%A3o/ABL-Quintas/videojatoba.mp4"
                         />
                     )}
                     {submenu === "jatoba" && currentView === "externas" && (

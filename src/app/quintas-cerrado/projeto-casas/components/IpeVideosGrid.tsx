@@ -23,8 +23,8 @@ type ExpandedVideo = {
 
 
 const expandedVideos: ExpandedVideo[] = [
-    { src: "/proj-casas/ipe/videos/opcao-1-1.mp4", alt: "Opcao 01", thumb: "" },
-    { src: "/proj-casas/ipe/videos/opcao-1-2.mp4", alt: "Opcao 01", thumb: "" },
+    { src: "https://skylineip.s3.sa-east-1.amazonaws.com/Programa%C3%A7%C3%A3o/ABL-Quintas/ipe-opcao-1-1.mp4", alt: "Opcao 01", thumb: "" },
+    { src: "https://skylineip.s3.sa-east-1.amazonaws.com/Programa%C3%A7%C3%A3o/ABL-Quintas/ipe-opcao-1-2.mp4", alt: "Opcao 01", thumb: "" },
 ]
 
 const IpeVideosGrid: React.FC = () => {
